@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Friendship Day!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe5ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+        }
+        .card h1 {
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+        .card p {
+            margin: 10px 0;
+            color: #333;
+            display: none; /* Initially hide the message */
+        }
+        .signature {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff3f31;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Friendship Day!</h1>
+        <p id="message">Dear Friend,</p>
+        <p id="message2">Thank you for being a part of my life. Your friendship means the world to me. Let's celebrate this special bond today and always!</p>
+        <p id="message3">With love,</p>
+        <p id="signature" class="signature">Your Name</p>
+        <button onclick="showMessage()">Show Message</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('message2').style.display = 'block';
+            document.getElementById('message3').style.display = 'block';
+            document.getElementById('signature').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
